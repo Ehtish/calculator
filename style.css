@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --light-gray: gray;
+  --dark-gray: rgb(71, 66, 66);
+  --red: red;
+  --white: #fff;
+}
+body {
+  background-color: var(--light-gray);
+}
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.text {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.btn-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.3rem;
+}
+h3 {
+  text-align: center;
+}
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.6rem;
+}
+input[type="text"] {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.reset {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.equal {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+/* utility classes */
+.bg-gray {
+  background-color: var(--dark-gray);
+}
+.bg-red {
+  background-color: var(--red);
+}
+.text-white {
+  color: var(--white);
+}
