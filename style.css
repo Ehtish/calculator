@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 :root {
-  --light-gray: gray;
-  --dark-gray: rgb(71, 66, 66);
-  --red: red;
-  --white: #fff;
+  --light-gray: #3b4664;
+  --dark-gray: #191f32;
+  --red: #d13f30;
+  --white: #e7e4da;
 }
 body {
   background-color: var(--light-gray);
