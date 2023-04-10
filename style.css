@@ -1,27 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 :root {
-  --light-gray: #3b4664;
-  --dark-gray: #191f32;
-  --red: #d13f30;
-  --white: #e7e4da;
+  /* background color  */
+  --bg-main: hsl(222, 26%, 31%);
+  --bg-toggle: hsl(223, 31%, 20%);
+  --bg-screen: hsl(224, 36%, 15%);
+
+  /* text colors  */
+  --txt-blue: hsl(221, 14%, 31%);
+  --white: hsl(0, 0%, 100%);
+
+  /* button colors */
+  --blue-key: hsl(225, 21%, 49%);
+  --red-key: hsl(6, 63%, 50%);
+  --blue-key-shadow: hsl(224, 28%, 35%);
+  --red-key-shadow: hsl(6, 70%, 34%);
+  --white-key-shadow: #c7c7c7;
+
+  --fw-500: 500;
+  --fw-900: 900;
+  --fw-1100: 1100;
 }
 body {
-  background-color: var(--light-gray);
+  background-color: var(--bg-main);
+  font-family: "League Spartan", sans-serif;
+  font-weight: var(--fw-500);
 }
+
 .container {
   display: grid;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 0.8rem;
+  margin-top: 8rem;
 }
 .header {
   display: flex;
   justify-content: space-between;
+  color: var(--white);
 }
+
 .text {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -29,20 +52,27 @@ body {
 .btn-group {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 0.3rem;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  padding: 2rem;
+  background-color: var(--bg-screen);
+  border-radius: 8px;
 }
 h3 {
   text-align: center;
 }
-button {
-  cursor: pointer;
-  border: none;
-  border-radius: 0.4rem;
-  padding: 0.6rem;
-}
+
 input[type="text"] {
+  text-align: right;
   grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 2;
+  padding: 1rem;
+  background-color: var(--bg-main);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  background-color: var(--bg-screen);
+  font-weight: var(--fw-900);
 }
 .reset {
   grid-column-start: 1;
@@ -52,13 +82,29 @@ input[type="text"] {
   grid-column-start: 3;
   grid-column-end: 5;
 }
+button,
+input[type="text"] {
+  font-size: larger;
+}
 /* utility classes */
-.bg-gray {
-  background-color: var(--dark-gray);
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 1rem 1.5rem;
+  background-color: var(--white);
+  color: var(--bg-main);
+  box-shadow: 0px 4px var(--white-key-shadow);
+  font-weight: var(--fw-900);
 }
-.bg-red {
-  background-color: var(--red);
-}
-.text-white {
+
+.btn-info {
+  background-color: var(--blue-key);
   color: var(--white);
+  box-shadow: 0px 4px var(--blue-key-shadow);
+}
+.btn-danger {
+  background-color: var(--red-key);
+  color: var(--white);
+  box-shadow: 0px 4px var(--red-key-shadow);
 }
