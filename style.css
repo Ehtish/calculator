@@ -37,7 +37,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
-  margin-top: 8rem;
+  margin-top: 5rem;
 }
 .header {
   display: flex;
@@ -74,11 +74,11 @@ input[type="text"] {
   background-color: var(--bg-screen);
   font-weight: var(--fw-900);
 }
-.reset {
+.btn-reset {
   grid-column-start: 1;
   grid-column-end: 3;
 }
-.equal {
+.btn-equal {
   grid-column-start: 3;
   grid-column-end: 5;
 }

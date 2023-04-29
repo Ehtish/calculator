@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="mystyle.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
@@ -17,12 +17,12 @@
         </form>
       </div>
 
-      <input type="text" value="333" />
+      <input class="result" type="text" readonly />
       <div class="btn-group bg-gray">
         <button>7</button>
         <button>8</button>
         <button>9</button>
-        <button class="btn-info">DEL</button>
+        <button class="btn-del btn-info">DEL</button>
         <button>4</button>
         <button>5</button>
         <button>6</button>
@@ -34,10 +34,11 @@
         <button>.</button>
         <button>0</button>
         <button>/</button>
-        <button>x</button>
-        <button class="reset btn-info">RESET</button>
-        <button class="equal btn-danger">=</button>
+        <button>*</button>
+        <button class="btn-reset btn-info">RESET</button>
+        <button class="btn-equal btn-danger">=</button>
       </div>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
